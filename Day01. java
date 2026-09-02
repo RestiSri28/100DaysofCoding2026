@@ -1,0 +1,26 @@
+public class Day01 {
+    public static void main(String[] args) {
+
+        // Komentar satu baris digunakan untuk memberikan keterangan
+        System.out.println("Halo, nama saya Resti.");
+
+        // Menampilkan kalimat ke layar
+        System.out.println("Saya sedang belajar bahasa pemrograman Java.");
+
+        /*
+         * Komentar multi-baris digunakan untuk memberikan
+         * penjelasan yang terdiri dari beberapa baris.
+         */
+        System.out.println("Hari ini saya mempelajari dasar-dasar Java.");
+
+        /**
+         * Documentation comment digunakan untuk memberikan
+         * dokumentasi atau penjelasan pada program.
+         */
+        System.out.println("Saya belajar tentang penggunaan komentar.");
+
+        // Baris berikut menampilkan semangat belajar
+        System.out.println("Saya akan terus belajar Java!");
+
+    }
+}

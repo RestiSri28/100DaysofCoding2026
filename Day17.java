@@ -1,25 +1,37 @@
 import java.util.Scanner;
 
-public class Saldo {
+public class OperatorPenugasan {
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Masukkan saldo awal : ");
-        int saldo = input.nextInt();
+        System.out.print("Masukkan nilai awal: ");
+        int angka = input.nextInt();
 
-        System.out.print("Masukkan uang masuk : ");
-        int uangMasuk = input.nextInt();
+        System.out.print("Masukkan nilai penambahan: ");
+        int tambah = input.nextInt();
+        angka += tambah;
+        System.out.println("Hasil += : " + angka);
 
-        System.out.print("Masukkan pengeluaran : ");
-        int pengeluaran = input.nextInt();
+        System.out.print("Masukkan nilai pengurangan: ");
+        int kurang = input.nextInt();
+        angka -= kurang;
+        System.out.println("Hasil -= : " + angka);
 
-        saldo += uangMasuk;
-        saldo -= pengeluaran;
+        System.out.print("Masukkan nilai perkalian: ");
+        int kali = input.nextInt();
+        angka *= kali;
+        System.out.println("Hasil *= : " + angka);
 
-        System.out.printf("%nSaldo awal   :\t%d%n", saldo - uangMasuk + pengeluaran);
-        System.out.printf("Uang masuk   :\t%d%n", uangMasuk);
-        System.out.printf("Pengeluaran  :\t%d%n", pengeluaran);
-        System.out.printf("Saldo akhir  :\t%d%n", saldo);
+        System.out.print("Masukkan nilai pembagian: ");
+        int bagi = input.nextInt();
+        angka /= bagi;
+        System.out.println("Hasil /= : " + angka);
+
+        System.out.print("Masukkan nilai modulus (%): ");
+        int modulus = input.nextInt();
+        angka %= modulus;
+        System.out.println("Hasil %= : " + angka);
 
         input.close();
     }
